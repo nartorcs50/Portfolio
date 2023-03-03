@@ -4,6 +4,7 @@ import Exp from "./components/Exp";
 import Projects from "./components/Projects";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContentPage from "./components/ContentPage";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <Router>
         <Routes>
            <Route path="/" element={<Home />} />
+           <Route path="#ContentPage" component={<ContentPage />} />
            <Route path="#projects" component={<Projects />} />
-           <Route path="/exp" component={<Exp />} />
-           <Route path="/contact" component={<Contact />} />
+           <Route path="#exp" component={<Exp />} />
+           <Route path="#contact" component={<Contact />} />
         </Routes>
       </Router>
     </div>

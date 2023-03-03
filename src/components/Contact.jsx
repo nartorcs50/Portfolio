@@ -11,7 +11,9 @@ function Contact() {
           opportunities presented to me, I'm progressively working on my career.
           Your welcome to say hello or want to learn more about me.
         </p>
-        <button className="contact__btn">Say Hello!</button>
+        <button className="contact__btn">
+          <a href="mailto: alhassannartor@gmail.com" className="contact__email" >Say Hello!</a>
+        </button>
       </div>
       <Email />
     </section>

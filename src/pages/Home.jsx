@@ -1,12 +1,12 @@
 import React from "react";
-import ContentPage from "../segments/ContentPage";
+import HomeContent from "../segments/HomeContent";
 import Siderbar from "../segments/Siderbar";
 
 function Home() {
   return (
     <div className="home">
       <Siderbar />
-      <ContentPage />
+      <HomeContent />
     </div>
   );
 }

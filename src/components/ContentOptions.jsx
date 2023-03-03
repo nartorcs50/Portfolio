@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
-
+import { HashLink as Link } from "react-router-hash-link";
 
 function ContentOptions() {
-
   // const [click, setClick] = useState(false)
   // const handleClick = () => setClick(!click)
 
@@ -12,17 +9,21 @@ function ContentOptions() {
   return (
     <div className="contentOptions">
       <div className="contentSelected">
-          <h2>
-        <Link to="#projects"  spy={true} smooth={true} offset={50} duration={500} onClick>
+        <h2>
+          <Link to="#projects" smooth>
             Projects
-        </Link>
-            </h2>
-        <Link to="/exp" spy={true} smooth={true} offset={50} duration={500}>
-          <h2>Experience</h2>
-        </Link>
-        <Link to="/contact" spy={true} smooth={true} offset={50} duration={500}>
-          <h2>Contact</h2>
-        </Link>
+          </Link>
+        </h2>
+        <h2>
+          <Link to="#exp" smooth>
+            Experience
+          </Link>
+        </h2>
+        <h2>
+          <Link to="#contact" smooth>
+            Contact
+          </Link>
+        </h2>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Twit from "../assets/Netflix__img.png";
 import Netf from "../assets/Twitter__img.png";
 import Libr from "../assets/Library__img.png";
@@ -12,9 +11,24 @@ function Projects() {
         <h2>projects</h2>
         <div className="project__images">
           <div className="images__position">
-            <img src={Twit} alt="" className="project__img" />
-            <img src={Netf} alt="" className="project__img" />
-            <img src={Libr} alt="" className="project__img" />
+            <div className="image__container">
+              <img src={Twit} alt="" className="project__img" />
+              <div className="image__overlay">
+                <h2>NETFLIX</h2>
+              </div>
+            </div>
+            <div className="image__container">
+              <img src={Netf} alt="" className="project__img" />
+              <div className="image__overlay">
+                <h2>TWITTER</h2>
+              </div>
+            </div>
+            <div className="image__container">
+              <img src={Libr} alt="" className="project__img" />
+              <div className="image__overlay">
+                <h2>LIBRARY</h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>
